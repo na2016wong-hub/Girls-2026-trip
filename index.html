@@ -1,5 +1,52 @@
-<!-- timeline style -->
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Chiang Mai Girls Trip 🌿</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Caveat:wght@700&display=swap"
+rel="stylesheet"
+/>
+
 <style>
+body{
+font-family:'Noto Sans TC',sans-serif;
+background:#F8F5EF;
+color:#374151;
+margin:0;
+}
+
+.hand{
+font-family:'Caveat',cursive;
+}
+
+.card{
+background:#fff;
+border-radius:26px;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.note{
+background:#F4F1EA;
+border-radius:18px;
+}
+
+.map-btn{
+display:inline-block;
+margin-top:8px;
+background:#DDE9DC;
+color:#35523E;
+font-size:13px;
+padding:8px 14px;
+border-radius:999px;
+text-decoration:none;
+}
+
 .timeline{
 position:relative;
 padding-left:28px;
@@ -17,7 +64,7 @@ background:#DDE9DC;
 
 .stop{
 position:relative;
-margin-bottom:24px;
+margin-bottom:26px;
 }
 
 .stop:before{
@@ -31,6 +78,95 @@ border-radius:999px;
 background:#6C8A73;
 }
 </style>
+</head>
+
+<body>
+
+<!-- top menu -->
+<div class="sticky top-0 z-50 bg-[#F8F5EF]/90 backdrop-blur-md border-b border-[#E8E1D7]">
+
+<div class="max-w-md mx-auto px-4 py-3 flex justify-between items-center">
+
+<div class="hand text-2xl text-[#6C8A73]">
+Chiang Mai 🌿
+</div>
+
+<div class="flex gap-2 text-sm">
+
+<a href="#itinerary" class="bg-white px-4 py-2 rounded-full shadow-sm">
+🗓 行程
+</a>
+
+<a href="#weather" class="bg-white px-4 py-2 rounded-full shadow-sm">
+☁️ 天氣
+</a>
+
+<a href="#fx" class="bg-white px-4 py-2 rounded-full shadow-sm">
+💱 匯率
+</a>
+
+</div>
+</div>
+</div>
+
+<div class="max-w-md mx-auto px-4 pb-16">
+
+<!-- hero -->
+<div class="pt-6">
+
+<div class="card p-6">
+
+<h1 class="text-2xl font-bold">
+Chiang Mai
+</h1>
+
+<p class="hand text-3xl text-[#6C8A73]">
+girls trip diary
+</p>
+
+<p class="text-sm text-gray-500 mt-2">
+👭 Girls • 8th Anniversary Trip
+</p>
+
+<div class="grid grid-cols-2 gap-3 mt-5 text-sm">
+
+<div class="note p-4">
+✈️ <b>Flight Information</b><br>
+6/5 UO738<br>
+07:50 → 09:45
+</div>
+
+<div class="note p-4">
+✈️ <b>Return Flight</b><br>
+6/7 UO755<br>
+19:25 → 23:15
+</div>
+
+<div class="note p-4">
+🏡 Day 1<br>
+Chai Cheevit Mae Sa
+
+<a class="map-btn"
+target="_blank"
+href="https://maps.app.goo.gl/NKitsktk6ddfCZFMA">
+📍Map
+</a>
+</div>
+
+<div class="note p-4">
+🏨 Day 2<br>
+Villa Alanna
+
+<a class="map-btn"
+target="_blank"
+href="https://maps.app.goo.gl/abBMFH5X2WrQihWN7">
+📍Map
+</a>
+</div>
+
+</div>
+</div>
+</div>
 
 <!-- DAY 1 -->
 <section id="itinerary" class="mt-8">
@@ -45,7 +181,7 @@ background:#6C8A73;
 
 <div class="stop">
 🍽️ <b>Brunch（未決定）</b><br>
-第一餐可以睇落機狀態再揀。
+第一餐睇落機狀態再揀。
 </div>
 
 <div class="stop">
@@ -72,7 +208,7 @@ href="https://maps.app.goo.gl/NKitsktk6ddfCZFMA">
 
 <div class="stop">
 ☕ <b>Fleur Cafe</b><br>
-傍晚去坐下／影相最啱。
+傍晚最啱去坐下／影相。
 
 <a class="map-btn"
 target="_blank"
@@ -97,7 +233,7 @@ href="https://maps.app.goo.gl/QCEzA3kP2th3uZPGA">
 <div class="timeline text-sm leading-7">
 
 <div class="stop">
-🌤 <b>Check out Day 1 Hotel</b>
+🌤 <b>Check out Day 1 hotel</b>
 </div>
 
 <div class="stop">
@@ -124,7 +260,7 @@ href="https://maps.app.goo.gl/s3SEpTMxVdmRiZRK6">
 
 <div class="stop">
 🛍 <b>JJ Market</b><br>
-清邁人氣 lifestyle market，手作＋咖啡＋local snacks。
+人氣 lifestyle market，手作＋咖啡＋local snacks。
 
 <a class="map-btn"
 target="_blank"
@@ -190,10 +326,81 @@ href="https://maps.app.goo.gl/abBMFH5X2WrQihWN7">
 </div>
 
 <div class="stop">
-✈️ <b>去機場</b><br>
+✈️ <b>出發去機場</b><br>
 19:25 flight
 </div>
 
 </div>
 </div>
 </section>
+
+<!-- weather -->
+<section id="weather" class="mt-8">
+
+<h2 class="hand text-3xl text-[#6C8A73]">
+☁️ 天氣
+</h2>
+
+<div class="card p-5 mt-3">
+
+<div class="grid grid-cols-3 gap-3 text-center text-sm">
+
+<div class="note p-4">
+6/5<br>🌦<br>26–32°
+</div>
+
+<div class="note p-4">
+6/6<br>⛅<br>25–31°
+</div>
+
+<div class="note p-4">
+6/7<br>🌤<br>25–32°
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- fx -->
+<section id="fx" class="mt-8">
+
+<h2 class="hand text-3xl text-[#6C8A73]">
+💱 匯率
+</h2>
+
+<div class="card p-5 mt-3">
+
+<div class="grid grid-cols-2 gap-3 text-sm">
+
+<div class="note p-4">
+HKD100 ≈ THB460
+</div>
+
+<div class="note p-4">
+HKD500 ≈ THB2300
+</div>
+
+<div class="note p-4">
+HKD1000 ≈ THB4600
+</div>
+
+<div class="note p-4">
+夜市建議帶現金
+</div>
+
+</div>
+</div>
+</section>
+
+<div class="text-center mt-10 pb-8">
+
+<p class="hand text-3xl text-[#6C8A73]">
+see you in chiang mai 🌼
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
