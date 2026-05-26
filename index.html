@@ -18,6 +18,7 @@ body{
 font-family:'Noto Sans TC',sans-serif;
 background:#F8F5EF;
 color:#374151;
+margin:0;
 }
 
 .hand{
@@ -30,21 +31,9 @@ border-radius:26px;
 box-shadow:0 10px 30px rgba(0,0,0,.06);
 }
 
-.polaroid{
-background:white;
-padding:10px;
+.note{
+background:#F4F1EA;
 border-radius:18px;
-box-shadow:0 8px 24px rgba(0,0,0,.08);
-}
-
-.photo{
-height:140px;
-border-radius:14px;
-background:#EEE7DD;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:28px;
 }
 
 .map-btn{
@@ -57,24 +46,43 @@ padding:8px 14px;
 border-radius:999px;
 text-decoration:none;
 }
-
-.note{
-background:#F4F1EA;
-border-radius:18px;
-}
 </style>
 </head>
 
 <body>
+
+<!-- menu -->
+<div class="sticky top-0 z-50 bg-[#F8F5EF]/90 backdrop-blur-md border-b border-[#E8E1D7]">
+<div class="max-w-md mx-auto px-4 py-3 flex justify-between items-center">
+
+<div class="hand text-2xl text-[#6C8A73]">
+Chiang Mai 🌿
+</div>
+
+<div class="flex gap-2 text-sm">
+
+<a href="#itinerary" class="bg-white px-4 py-2 rounded-full shadow-sm">
+🗓 行程
+</a>
+
+<a href="#weather" class="bg-white px-4 py-2 rounded-full shadow-sm">
+☁️ 天氣
+</a>
+
+<a href="#fx" class="bg-white px-4 py-2 rounded-full shadow-sm">
+💱 匯率
+</a>
+
+</div>
+</div>
+</div>
 
 <div class="max-w-md mx-auto px-4 pb-16">
 
 <!-- hero -->
 <div class="pt-6">
 
-<div class="card p-6 relative overflow-hidden">
-
-<div class="absolute top-4 right-4 text-2xl">🌼</div>
+<div class="card p-6">
 
 <h1 class="text-2xl font-bold">
 Chiang Mai
@@ -103,8 +111,9 @@ girls trip diary
 </div>
 
 <div class="note p-4">
-🏡 <b>Day 1</b><br>
+🏡 Day 1<br>
 Chai Cheevit Mae Sa
+
 <a class="map-btn" target="_blank"
 href="https://maps.app.goo.gl/NKitsktk6ddfCZFMA">
 📍Map
@@ -112,8 +121,9 @@ href="https://maps.app.goo.gl/NKitsktk6ddfCZFMA">
 </div>
 
 <div class="note p-4">
-🏨 <b>Day 2</b><br>
+🏨 Day 2<br>
 Villa Alanna
+
 <a class="map-btn" target="_blank"
 href="https://maps.app.goo.gl/abBMFH5X2WrQihWN7">
 📍Map
@@ -126,41 +136,51 @@ href="https://maps.app.goo.gl/abBMFH5X2WrQihWN7">
 </div>
 
 <!-- day1 -->
-<section class="mt-8">
+<section id="itinerary" class="mt-8">
 
-<h2 class="hand text-3xl text-[#6C8A73]">
-🌿 Day 1
-</h2>
+<h2 class="hand text-3xl text-[#6C8A73]">🌿 Day 1</h2>
 
 <div class="card p-5 mt-3 space-y-5 text-sm leading-7">
 
 <div>
 ✈️ <b>09:45 抵達清邁機場</b><br>
-落機後出發去山區方向。
+預 immigration + call 車，之後直接去 Old Town。
 </div>
 
 <div>
-☕ <b>Fleur Cafe brunch</b><br>
-慢慢食 brunch、打卡影相，當作旅程開始。
+🍽️ <b>11:30 It’s Good Kitchen</b>
+
+<a class="map-btn" target="_blank"
+href="https://maps.app.goo.gl/UiH6E6uLJr3J7qU57">
+📍Google Maps
+</a>
 </div>
 
 <div>
-💆 <b>Spa 時間</b><br>
-食完直接去 spa 放鬆，第一日唔趕行程。
+💆‍♀️ <b>13:30 Makkha Spa</b>
+
+<a class="map-btn" target="_blank"
+href="https://maps.app.goo.gl/Wk5Nm1jKJ5s5o4Rv8">
+📍Google Maps
+</a>
 </div>
 
 <div>
-🏡 <b>入住 Day 1 酒店</b><br>
-山景＋hea 下休息。
+☕ <b>Optional：WTF Coffee Camp</b>
+
+<a class="map-btn" target="_blank"
+href="https://maps.app.goo.gl/XT1v79Wv6L5YQyqG8">
+📍Google Maps
+</a>
 </div>
 
 <div>
-☕ <b>Optional：附近 cafe</b><br>
-如果精神仲好，可以去附近 cafe 坐下。
-</div>
+🏡 <b>入住 Chai Cheevit Mae Sa</b>
 
-<div class="note p-4">
-🌙 第一晚建議留輕鬆節奏，早啲休息。
+<a class="map-btn" target="_blank"
+href="https://maps.app.goo.gl/NKitsktk6ddfCZFMA">
+📍Google Maps
+</a>
 </div>
 
 </div>
@@ -169,45 +189,57 @@ href="https://maps.app.goo.gl/abBMFH5X2WrQihWN7">
 <!-- day2 -->
 <section class="mt-8">
 
-<h2 class="hand text-3xl text-[#6C8A73]">
-🛍 Day 2
-</h2>
+<h2 class="hand text-3xl text-[#6C8A73]">🛍 Day 2</h2>
 
 <div class="card p-5 mt-3 space-y-5 text-sm leading-7">
 
 <div>
-🌤 <b>09:00–11:00 戶外時間</b><br>
-可以：
-<ul class="list-disc ml-5 mt-2">
-<li>酒店附近散步</li>
-<li>山景影相</li>
-<li>泳池 chill</li>
-</ul>
+🌤 <b>09:00 Mon Jam</b>
+
+<a class="map-btn" target="_blank"
+href="https://maps.app.goo.gl/EPQ3aV2s3H6hM9s18">
+📍Google Maps
+</a>
 </div>
 
 <div>
-🚗 <b>返回市中心</b><br>
-預車程返 Villa Alanna check-in。
+🏨 <b>11:00 Villa Alanna check-in</b>
+
+<a class="map-btn" target="_blank"
+href="https://maps.app.goo.gl/abBMFH5X2WrQihWN7">
+📍Google Maps
+</a>
 </div>
 
 <div>
-🍽 <b>12:30 Old Town lunch</b><br>
-已 confirm booking。
+🍽️ <b>12:30 Old Town Lunch</b>
 </div>
 
 <div>
-🛍 <b>Jing Jai Market</b><br>
-行 lifestyle market / 手作。
+🛍 <b>Jing Jai Market</b>
+
+<a class="map-btn" target="_blank"
+href="https://maps.app.goo.gl/LozF5X5m8UQ5v91D9">
+📍Google Maps
+</a>
 </div>
 
 <div>
-🌙 <b>清邁大學夜市</b><br>
-夜晚食小食＋行街。
+🌙 <b>CMU Night Market</b>
+
+<a class="map-btn" target="_blank"
+href="https://maps.app.goo.gl/FmW8Wj8HpxzB7m3W7">
+📍Google Maps
+</a>
 </div>
 
 <div>
-💆 <b>夜市附近按摩</b><br>
-可睇時間再安排。
+💆‍♀️ <b>Let’s Relax Massage</b>
+
+<a class="map-btn" target="_blank"
+href="https://maps.app.goo.gl/od9n2MqN1mZ5xvG49">
+📍Google Maps
+</a>
 </div>
 
 </div>
@@ -216,32 +248,77 @@ href="https://maps.app.goo.gl/abBMFH5X2WrQihWN7">
 <!-- day3 -->
 <section class="mt-8">
 
-<h2 class="hand text-3xl text-[#6C8A73]">
-🍜 Day 3
-</h2>
+<h2 class="hand text-3xl text-[#6C8A73]">🍜 Day 3</h2>
 
 <div class="card p-5 mt-3 space-y-5 text-sm leading-7">
 
 <div>
-☕ <b>早餐 / cafe</b>
+☕ <b>GRAPH Cafe</b>
+
+<a class="map-btn" target="_blank"
+href="https://maps.app.goo.gl/ZXVQ8m3P5a1LQY3W7">
+📍Google Maps
+</a>
 </div>
 
 <div>
-🍜 <b>必食泰北麵</b><br>
-旅程最後一餐。
+🍜 <b>Khao Soi Maesai</b>
+
+<a class="map-btn" target="_blank"
+href="https://maps.app.goo.gl/Ui5JY2z4wW2QjV9z7">
+📍Google Maps
+</a>
 </div>
 
 <div>
-🧳 <b>返酒店攞行李</b>
-</div>
+🧳 <b>返 Villa Alanna 攞行李</b>
 
-<div>
-🚗 <b>17:00 左右去機場</b>
+<a class="map-btn" target="_blank"
+href="https://maps.app.goo.gl/abBMFH5X2WrQihWN7">
+📍Google Maps
+</a>
 </div>
 
 <div class="note p-4">
-✈️ UO755<br>
-19:25 起飛
+✈️ 17:00 出發去機場<br>
+UO755 19:25
+</div>
+
+</div>
+</section>
+
+<!-- weather -->
+<section id="weather" class="mt-8">
+
+<h2 class="hand text-3xl text-[#6C8A73]">☁️ 天氣</h2>
+
+<div class="card p-5 mt-3 text-sm leading-7">
+
+<div class="grid grid-cols-3 gap-3 text-center">
+
+<div class="note p-4">6/5<br>🌦<br>26–32°</div>
+<div class="note p-4">6/6<br>⛅<br>25–31°</div>
+<div class="note p-4">6/7<br>🌤<br>25–32°</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- fx -->
+<section id="fx" class="mt-8">
+
+<h2 class="hand text-3xl text-[#6C8A73]">💱 匯率</h2>
+
+<div class="card p-5 mt-3 text-sm leading-7">
+
+<div class="grid grid-cols-2 gap-3">
+
+<div class="note p-4">HKD100 ≈ THB460</div>
+<div class="note p-4">HKD500 ≈ THB2300</div>
+<div class="note p-4">HKD1000 ≈ THB4600</div>
+<div class="note p-4">夜市建議現金</div>
+
 </div>
 
 </div>
